@@ -1,0 +1,10 @@
+{
+    "cons_key"       : "CONSUMER KEY FOR TWITTER API V2",
+    "cons_sec"       : "CONSUMER SECRET KEY FOR TWITTER API V2",
+    "access_token"   : "ACCESS TOKEN FOR TWITTER API V2",
+    "access_sec"     : "ACCESS TOKEN SECRET FOR TWITTER API V2",
+    "discord_webhook_url": "DISCORD WEBHOOK URL",
+    "target": "TWITTER USER ID"
+    "host": "USERNAME@HOSTNAME",
+    "host_path": "REMOTE FILE PATH"
+}
