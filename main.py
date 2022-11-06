@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from tweet_sender import twitter
-from tweet_sender.senders import (
+from message_senders import (
     DiscordSender,
     FileSender,
     RemoteFileSender,
