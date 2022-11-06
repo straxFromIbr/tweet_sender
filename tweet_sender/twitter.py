@@ -2,9 +2,8 @@ import json
 import os
 from typing import List
 
+from message_senders import BaseSender
 from requests_oauthlib import OAuth1Session
-
-from .senders import Sender
 
 
 class TweetFetcher:
@@ -14,7 +13,7 @@ class TweetFetcher:
         self,
         api_keys: dict,
         target,
-        senders: List[Sender],
+        senders: List[BaseSender],
         max_id=None,
         prefix="",
         since_id_path="since_id",
