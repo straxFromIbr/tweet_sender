@@ -1,6 +1,10 @@
-from message_senders import DiscordSender
+#!/usr/bin/python3
 import json
+import os
 import subprocess
+from pathlib import Path
+
+from message_senders import DiscordSender
 
 
 class TextGenerator:
@@ -55,4 +59,5 @@ def main():
 
 
 if __name__ == "__main__":
+    os.chdir(Path(__file__).parent)
     main()

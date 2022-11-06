@@ -4,13 +4,9 @@ import json
 import os
 from pathlib import Path
 
+from message_senders import DiscordSender, FileSender, RemoteFileSender, StdOutSender
+
 from tweet_sender import twitter
-from message_senders import (
-    DiscordSender,
-    FileSender,
-    RemoteFileSender,
-    StdOutSender,
-)
 
 
 def main():
