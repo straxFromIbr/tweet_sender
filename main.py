@@ -1,4 +1,7 @@
+#!/usr/bin/python3
+
 import json
+import os
 from pathlib import Path
 
 from tweet_sender import twitter
@@ -33,4 +36,5 @@ def main():
 
 
 if __name__ == "__main__":
+    os.chdir(Path(__file__).parent)
     main()
