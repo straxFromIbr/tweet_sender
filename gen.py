@@ -54,7 +54,7 @@ def main():
 
     generated_tweet = generator.gen()
     generated_tweet = "[GPT2 GENERATED] " + generated_tweet
-    sender.send(generated_tweet)
+    sender.send(generated_tweet[:150])
     print(generated_tweet)
 
 
