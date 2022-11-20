@@ -6,7 +6,7 @@ from pathlib import Path
 
 from message_senders import DiscordSender, FileSender, RemoteFileSender, StdOutSender
 
-from tweet_sender import twitter
+from tweet_fetcher import TweetFetcher
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
         RemoteFileSender(host=host, host_path=host_path),
     ]
 
-    tweet_fether = twitter.TweetFetcher(
+    tweet_fether = TweetFetcher(
         api_keys=api_keys,
         target=target,
         senders=senders,
